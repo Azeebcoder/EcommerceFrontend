@@ -9,7 +9,9 @@ const CartSidebar = ({setOpen}) => {
     { id: 2, name: 'Product 2', price: 29.99, quantity: 1, image: 'https://via.assets.so/img.jpg?w=250&h=250' },
     { id: 3, name: 'Product 3', price: 9.99, quantity: 3, image: 'https://via.assets.so/img.jpg?w=250&h=250' },
     { id: 3, name: 'Product 3', price: 9.99, quantity: 3, image: 'https://via.assets.so/img.jpg?w=250&h=250' },
-    { id: 3, name: 'Product 3', price: 9.99, quantity: 3, image: 'https://via.assets.so/img.jpg?w=250&h=250' }
+    { id: 3, name: 'Product 3', price: 9.99, quantity: 3, image: 'https://via.assets.so/img.jpg?w=250&h=250' },
+    { id: 3, name: 'Product 3', price: 9.99, quantity: 3, image: 'https://via.assets.so/img.jpg?w=250&h=250' },
+    { id: 3, name: 'Product 3', price: 9.99, quantity: 3, image: 'https://via.assets.so/img.jpg?w=250&h=250' },
   ];
   return (
     <>
@@ -81,11 +83,11 @@ const CartSidebar = ({setOpen}) => {
       </div>
 
       {/* Checkout Button */}
-      <button
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-64 py-3 bg-black text-white rounded-lg hover:bg-gray-900 transition-colors duration-200 shadow-lg hover:shadow-xl active:bg-gray-800"
-      >
-        Checkout
-      </button>
+      <div className="sticky bottom-0 bg-white shadow-lg p-4">
+        <button className="w-full py-3 bg-black text-white rounded-lg hover:bg-gray-900 transition duration-200">
+          Checkout
+        </button>
+        </div>
     </>
   )
 }

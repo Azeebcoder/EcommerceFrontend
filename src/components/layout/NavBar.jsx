@@ -40,27 +40,30 @@ const NavBar = () => {
             <div>
               <SearchBar />
             </div>
-            <button onClick={()=>setMobileNavOpen(!mobileNavOpen)} className="md:hidden cursor-pointer flex justify-center items-center">
+            <button
+              onClick={() => setMobileNavOpen(!mobileNavOpen)}
+              className="md:hidden cursor-pointer flex justify-center items-center"
+            >
               <RiMenu3Line />
             </button>
           </ul>
         </div>
       </nav>
       <div
-         className={`absolute -top-0 ${
-          isCartOpen ? "right-0" : "-right-120"
-        } w-[25rem] h-[100vh] transition-all duration-500 ease-in-out bg-white shadow-2xl p-6`}
+        className={`fixed top-0 right-0 w-[25rem] h-screen transition-transform duration-500 ease-in-out bg-white shadow-2xl p-6 ${
+          isCartOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <CartSidebar setOpen={setIsCartOpen} />
       </div>
+
       <div
-         className={`md:hidden absolute -top-0 ${
-          mobileNavOpen ? "left-0" : "-left-120"
-        } w-80 h-[100vh] transition-all duration-500 ease-in-out bg-white shadow-2xl p-6`}
+        className={`fixed top-0 left-0 w-80 h-screen transition-transform duration-500 ease-in-out bg-white shadow-2xl p-6 md:hidden ${
+          mobileNavOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
         <MobileSideBar setOpen={setMobileNavOpen} />
       </div>
-        
     </>
   );
 };
