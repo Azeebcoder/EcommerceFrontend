@@ -50,7 +50,7 @@ const NavBar = () => {
         </div>
       </nav>
       <div
-        className={`fixed top-0 right-0 w-[25rem] h-screen transition-transform duration-500 ease-in-out bg-white shadow-2xl p-6 ${
+        className={`fixed top-0 right-0 w-96 h-screen transition-transform duration-500 ease-in-out bg-white shadow-2xl p-6 ${
           isCartOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -58,7 +58,7 @@ const NavBar = () => {
       </div>
 
       <div
-        className={`fixed top-0 left-0 w-80 h-screen transition-transform duration-500 ease-in-out bg-white shadow-2xl p-6 md:hidden ${
+        className={`fixed top-0 left-0 w-64 h-screen transition-transform duration-500 ease-in-out bg-white shadow-2xl p-6 md:hidden ${
           mobileNavOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
