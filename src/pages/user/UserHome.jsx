@@ -1,12 +1,14 @@
 import React from 'react'
 import Hero from '../../components/user/Hero'
-import HeroGenderSelect from '../../components/user/HeroGenderSelect'
+import HomeGenderSelect from '../../components/user/HomeGenderSelect'
+import HomeNewProducts from '../../components/user/HomeNewProducts'
 
 const UserHome = () => {
   return (
     <>
       <Hero/>
-      <HeroGenderSelect/>
+      <HomeGenderSelect/>
+      <HomeNewProducts/>
     </>
   )
 }
