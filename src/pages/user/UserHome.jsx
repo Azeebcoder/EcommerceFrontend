@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from '../../components/user/Hero'
+import HeroGenderSelect from '../../components/user/HeroGenderSelect'
 
 const UserHome = () => {
   return (
-    <div>UserHome</div>
+    <>
+      <Hero/>
+      <HeroGenderSelect/>
+    </>
   )
 }
 
